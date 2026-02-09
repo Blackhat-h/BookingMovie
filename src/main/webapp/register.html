@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Register</title>
+<style>
+    body {
+        background: linear-gradient(to right, #00c6ff, #0072ff);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 100vh;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-container {
+        background-color: white;
+        padding: 40px 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        width: 400px;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #333;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        margin: 10px 0 5px;
+        font-weight: bold;
+        color: #555;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="number"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+    .button-group {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+    input[type="submit"], .cancel-btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+        transform: scale(1.05);
+    }
+    .cancel-btn {
+        background-color: #f44336;
+    }
+    .cancel-btn:hover {
+        background-color: #e53935;
+        transform: scale(1.05);
+    }
+</style>
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Register</h1>
+    <form action="Register" method="post">
+        <label for="name">Enter Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="pwd">Enter Password:</label>
+        <input type="password" id="pwd" name="pwd" required>
+
+        <label for="mid">Enter Mail ID:</label>
+        <input type="text" id="mid" name="mid" required>
+
+        <label for="phno">Enter Phone Number:</label>
+        <input type="number" id="phno" name="phno" required>
+
+        <div class="button-group">
+            <input type="submit" value="Submit">
+            <a href="Choice1.html" class="cancel-btn">Cancel</a>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
