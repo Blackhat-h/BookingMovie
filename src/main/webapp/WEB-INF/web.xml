@@ -2,7 +2,7 @@
 <web-app>
 <welcome-file-list>
 		<welcome-file>
-			Choice1.html
+			index.html
 			</welcome-file>
 	</welcome-file-list>
 
